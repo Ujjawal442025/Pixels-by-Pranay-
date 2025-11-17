@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REEL CRAFT STUDIO - Cinematic Video Editing</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    
+    
+</head>
+<body>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">REEL CRAFT</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero__video" autoplay muted loop playsinline>
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+        </video>
+        <div class="hero__content">
+            <p class="hero__subtitle">WHERE STORIES COME ALIVE</p>
+            <h1 class="hero__title">
+                <span><span>CRAFTING</span></span>
+                <span><span>CINEMATIC</span></span>
+                <span><span>NARRATIVES</span></span>
+            </h1>
+            <a href="#work" class="hero__cta">
+                <span>Explore Work</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Video Scroll Section -->
+    <section class="video-scroll">
+        <div class="video-scroll__container">
+            <!-- Video 1 -->
+            <div class="video-scroll__item active" data-index="0">
+                <video class="video-scroll__video" muted loop playsinline>
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                </video>
+                <div class="video-scroll__content">
+                    <p class="video-scroll__number">01</p>
+                    <h2 class="video-scroll__title">COMMERCIAL EXCELLENCE</h2>
+                    <p class="video-scroll__description">
+                        Crafting high-end brand stories that resonate. From concept to final cut, 
+                        we transform products into experiences through cinematic storytelling.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-scroll__item" data-index="1">
+                <video class="video-scroll__video" muted loop playsinline>
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                </video>
+                <div class="video-scroll__content">
+                    <p class="video-scroll__number">02</p>
+                    <h2 class="video-scroll__title">DOCUMENTARY VISION</h2>
+                    <p class="video-scroll__description">
+                        Raw, authentic, powerful. Capturing real moments and weaving them into 
+                        compelling narratives that move audiences and inspire change.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-scroll__item" data-index="2">
+                <video class="video-scroll__video" muted loop playsinline>
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
+                </video>
+                <div class="video-scroll__content">
+                    <p class="video-scroll__number">03</p>
+                    <h2 class="video-scroll__title">MUSIC & MOTION</h2>
+                    <p class="video-scroll__description">
+                        Where rhythm meets visual artistry. Creating music videos that pulse with 
+                        energy, translating sound into unforgettable visual experiences.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="video-scroll__item" data-index="3">
+                <video class="video-scroll__video" muted loop playsinline>
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" type="video/mp4">
+                </video>
+                <div class="video-scroll__content">
+                    <p class="video-scroll__number">04</p>
+                    <h2 class="video-scroll__title">BRAND EVOLUTION</h2>
+                    <p class="video-scroll__description">
+                        Transforming identities through motion. Strategic brand films that elevate 
+                        companies and create lasting impressions in the digital landscape.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about__grid">
+            <div>
+                <p class="section-label">ABOUT</p>
+                <h2 class="about__title">PRECISION MEETS CREATIVITY</h2>
+            </div>
+            <div>
+                <p class="about__text">
+                    With over a decade of experience in video editing and post-production, we've crafted 
+                    visual narratives for Fortune 500 companies, emerging startups, and visionary artists. 
+                    Our approach combines technical mastery with creative storytelling.
+                </p>
+                <p class="about__text">
+                    Every frame is intentional. Every cut tells a story. We don't just edit videos—we 
+                    architect experiences that captivate, engage, and convert audiences into believers.
+                </p>
+
+                <div class="stats">
+                    <div>
+                        <div class="stat__number">150+</div>
+                        <div class="stat__label">Projects</div>
+                    </div>
+                    <div>
+                        <div class="stat__number">50+</div>
+                        <div class="stat__label">Clients</div>
+                    </div>
+                    <div>
+                        <div class="stat__number">10+</div>
+                        <div class="stat__label">Years</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="services__container">
+            <h2 class="services__title">SERVICES</h2>
+            <div class="services__grid">
+                <div class="service">
+                    <div class="service__icon">✂️</div>
+                    <h3 class="service__title">VIDEO EDITING</h3>
+                    <p class="service__description">
+                        Expert editing in Premiere Pro, DaVinci Resolve, and Final Cut Pro. From rough 
+                        cuts to final delivery, we handle projects of any scale with precision.
+                    </p>
+                </div>
+
+                <div class="service">
+                    <div class="service__icon">🎨</div>
+                    <h3 class="service__title">COLOR GRADING</h3>
+                    <p class="service__description">
+                        Advanced color correction and grading that elevates your footage. Creating 
+                        cinematic looks that match your brand identity and vision.
+                    </p>
+                </div>
+
+                <div class="service">
+                    <div class="service__icon">🎬</div>
+                    <h3 class="service__title">MOTION GRAPHICS</h3>
+                    <p class="service__description">
+                        Dynamic motion graphics and visual effects in After Effects. From title 
+                        sequences to complex compositing, we bring ideas to life.
+                    </p>
+                </div>
+
+                <div class="service">
+                    <div class="service__icon">🔊</div>
+                    <h3 class="service__title">SOUND DESIGN</h3>
+                    <p class="service__description">
+                        Professional audio mixing, sound design, and music integration. Creating 
+                        immersive soundscapes that complement your visual story.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="work__container">
+            <h2 class="work__title">SELECTED WORK</h2>
+            <div class="work__grid">
+                <div class="work-item">
+                    <video class="work-item__video" muted loop playsinline>
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4">
+                    </video>
+                    <div class="work-item__overlay">
+                        <p class="work-item__category">Commercial</p>
+                        <h3 class="work-item__title">Nike Sportswear Campaign</h3>
+                    </div>
+                </div>
+
+                <div class="work-item">
+                    <video class="work-item__video" muted loop playsinline>
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
+                    </video>
+                    <div class="work-item__overlay">
+                        <p class="work-item__category">Music Video</p>
+                        <h3 class="work-item__title">Electric Dreams</h3>
+                    </div>
+                </div>
+
+                <div class="work-item">
+                    <video class="work-item__video" muted loop playsinline>
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4" type="video/mp4">
+                    </video>
+                    <div class="work-item__overlay">
+                        <p class="work-item__category">Documentary</p>
+                        <h3 class="work-item__title">Urban Stories</h3>
+                    </div>
+                </div>
+
+                <div class="work-item">
+                    <video class="work-item__video" muted loop playsinline>
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4">
+                    </video>
+                    <div class="work-item__overlay">
+                        <p class="work-item__category">Brand Film</p>
+                        <h3 class="work-item__title">Tesla Vision</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card Stack Carousel Section -->
+    <section class="card-stack-section">
+        <div class="card-stack-container">
+            <h2 class="card-stack-title">RECENT PROJECTS</h2>
+            <p class="card-stack-subtitle">Swipe to explore our portfolio</p>
+            
+            <div class="card-stack-carousel" id="cardStackCarousel">
+                <div class="card-stack-wrapper" id="cardStackWrapper">
+                    <!-- Card 1 -->
+                    <div class="stack-card active" data-index="0">
+                        <div class="stack-card-inner">
+                            <video class="stack-card-video" loop muted playsinline autoplay>
+                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                            </video>
+                            <div class="stack-card-overlay">
+                                <span class="stack-card-tag">COMMERCIAL</span>
+                                <div class="stack-card-content">
+                                    <h3 class="stack-card-title">Nike Revolution</h3>
+                                    <button class="stack-card-btn">View project</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="stack-card" data-index="1">
+                        <div class="stack-card-inner">
+                            <video class="stack-card-video" loop muted playsinline>
+                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                            </video>
+                            <div class="stack-card-overlay">
+                                <span class="stack-card-tag">MUSIC VIDEO</span>
+                                <div class="stack-card-content">
+                                    <h3 class="stack-card-title">Electric Dreams</h3>
+                                    <button class="stack-card-btn">View project</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="stack-card" data-index="2">
+                        <div class="stack-card-inner">
+                            <video class="stack-card-video" loop muted playsinline>
+                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                            </video>
+                            <div class="stack-card-overlay">
+                                <span class="stack-card-tag">SOCIAL</span>
+                                <div class="stack-card-content">
+                                    <h3 class="stack-card-title">Viral Campaign</h3>
+                                    <button class="stack-card-btn">View project</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="stack-card" data-index="3">
+                        <div class="stack-card-inner">
+                            <video class="stack-card-video" loop muted playsinline>
+                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
+                            </video>
+                            <div class="stack-card-overlay">
+                                <span class="stack-card-tag">DOCUMENTARY</span>
+                                <div class="stack-card-content">
+                                    <h3 class="stack-card-title">Street Stories</h3>
+                                    <button class="stack-card-btn">View project</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="stack-card" data-index="4">
+                        <div class="stack-card-inner">
+                            <video class="stack-card-video" loop muted playsinline>
+                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" type="video/mp4">
+                            </video>
+                            <div class="stack-card-overlay">
+                                <span class="stack-card-tag">BRAND FILM</span>
+                                <div class="stack-card-content">
+                                    <h3 class="stack-card-title">Corporate Identity</h3>
+                                    <button class="stack-card-btn">View project</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="stack-card" data-index="5">
+                        <div class="stack-card-inner">
+                            <video class="stack-card-video" loop muted playsinline>
+                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4">
+                            </video>
+                            <div class="stack-card-overlay">
+                                <span class="stack-card-tag">FASHION</span>
+                                <div class="stack-card-content">
+                                    <h3 class="stack-card-title">Runway Highlights</h3>
+                                    <button class="stack-card-btn">View project</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="stack-card" data-index="6">
+                        <div class="stack-card-inner">
+                            <video class="stack-card-video" loop muted playsinline>
+                                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
+                            </video>
+                            <div class="stack-card-overlay">
+                                <span class="stack-card-tag">EVENT</span>
+                                <div class="stack-card-content">
+                                    <h3 class="stack-card-title">Festival Coverage</h3>
+                                    <button class="stack-card-btn">View project</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="card-nav card-nav--prev" id="cardPrev">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </button>
+            <button class="card-nav card-nav--next" id="cardNext">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Showreel Section -->
+    <section class="showreel" style="display: none">
+        <div class="showreel__container">
+            <h2 class="showreel__title">SHOWREEL</h2>
+            <div class="showreel__player">
+                <video id="showreelVideo" class="showreel__video" playsinline>
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4">
+                </video>
+                <div class="showreel__controls">
+                    <button class="showreel__play" id="playBtn">
+                        <svg class="play-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                            <path d="M6 4h4v16H6zM14 4h4v16h-4z"/>
+                        </svg>
+                    </button>
+                    <div class="showreel__progress-bar">
+                        <div class="showreel__progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="showreel__time" id="timeDisplay">0:00 / 0:00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="testimonials__container">
+            <h2 class="testimonials__title">CLIENT TESTIMONIALS</h2>
+            
+            <div class="testimonial">
+                <p class="testimonial__text">
+                    "Working with Reel Craft was transformative. They didn't just edit our content—they 
+                    elevated our entire brand story. The attention to detail and creative vision exceeded 
+                    all expectations."
+                </p>
+                <p class="testimonial__author">SARAH MITCHELL</p>
+                <p class="testimonial__role">Creative Director, Nike</p>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial__text">
+                    "Exceptional quality and professionalism. They turned our rough footage into a 
+                    cinematic masterpiece. The final product drove a 300% increase in engagement."
+                </p>
+                <p class="testimonial__author">JAMES RODRIGUEZ</p>
+                <p class="testimonial__role">CEO, TechStart Inc.</p>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial__text">
+                    "Simply the best in the business. Their technical expertise combined with artistic 
+                    sensibility creates magic. Every project is delivered on time and beyond expectations."
+                </p>
+                <p class="testimonial__author">EMMA CHEN</p>
+                <p class="testimonial__role">Producer, Netflix Originals</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite Scrolling Text -->
+    <section class="marquee-section">
+        <div class="marquee">
+            <div class="marquee__content">
+                <span>LET'S WORK TOGETHER</span>
+                <span>LET'S WORK TOGETHER</span>
+                <span>LET'S WORK TOGETHER</span>
+                <span>LET'S WORK TOGETHER</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact__container">
+            <h2 class="contact__title">LET'S CREATE TOGETHER</h2>
+            <p class="contact__subtitle">Ready to elevate your visual story?</p>
+
+            <div class="contact__grid">
+                <form class="contact__form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project">Project Type</label>
+                        <input type="text" id="project" name="project" placeholder="Commercial, Music Video, etc.">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="contact__submit">Send Message</button>
+                    <div class="form-message" id="formMessage">Thank you! We'll be in touch soon.</div>
+                </form>
+
+                <div class="contact__info">
+                    <div class="contact-info__item">
+                        <h4>Email</h4>
+                        <a href="mailto:hello@reelcraft.studio">hello@reelcraft.studio</a>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <h4>Phone</h4>
+                        <a href="tel:+15558472950">+1 (555) 847-2950</a>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <h4>Location</h4>
+                        <p>Los Angeles, California</p>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <h4>Social</h4>
+                        <p>
+                            <a href="https://instagram.com" target="_blank">Instagram</a> / 
+                            <a href="https://vimeo.com" target="_blank">Vimeo</a> / 
+                            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 REEL CRAFT STUDIO. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
